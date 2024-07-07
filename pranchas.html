@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welina Cosmeticos | Catálolgo</title>
+</head>
+<body>
+        <header class="cabecalho">
+        <img class="logowelina" src="imagens/welinaredondo.png" alt="logo welina cosmeticos">
+        <nav class="menucabecalho">
+            <a href="https://wa.me/553484256087?text=Gostaria%20de%20saber%20mais%20sobre%20seus%20produtos" target="_blank"><button>Contato</button></a>
+            <a href="https://www.instagram.com/welinamaciel/" target="_blank"><button>Instagram</button></a>
+        </nav>
+    </header>
+    
+    <main>
+       <div class="container">
+        <div class="white-box">
+            <div class="items">
+                <div class="item">
+                    <div class="product led">
+                        <img src="imagens/prancha1.png" alt="prancha lizze supreme">
+                        <div class="led">Visor de led</div>
+                    </div>
+                    <h3>Prancha Lizze Supreme</h3>
+                    <span><small>Lâminas de titânio, gabinete reforçado</small></span>
+                    <button class="btnOpenProduto" onclick="openProduto('produto1')">Saiba Mais</button>
+                    <div class="container-produto" id="produto1" >
+                        <div class="produto">
+                            <h3>Prancha Lizze Supreme</h3>
+                            <hr />
+                            <div class="caixa">
+                                <b><li>Equipamento profissional e de alta qualidade.</li>
+                                <li>Lâminas de titânio.</li>
+                                <li>Reduz o seu tempo de trabalho.</li>
+                                <li>Maior potência do mercado!</li></b>
+                            </div>
+                            <h3>Vídeo demonstrativo:</h3>
+                            <div class="demonstrativo">
+                                <iframe class="demonstrativo"  width="560" height="315" src="https://www.youtube.com/embed/Whwvx943FVQ?si=HHBZDy8KYi8sf7kV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <hr />
+                            <div class="botoes">
+                                <a href="https://wa.me/553491920322?text=Gostaria%20de%20saber%20o%20preço%20da%20" target="_blank"><button class="botaopreco">Consultar Preço</button></a>
+                                <button class="botaoclose" onclick="closeProduto('produto1')">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="script.js"></script>
+                </div>
+                <div class="item">
+                    <div class="product led">
+                        <img src="imagens/prancha2.png" alt="prancha lizze supreme">
+                        <div class="led">Visor de led</div>
+                    </div>
+                    <h3>Prancha Lizze Extreme</h3>
+                    <span><small>5 variações de temperatura, amortecimento nas lâminas</small></span>
+                    <button class="openDois" onclick="openDois('produtodois')">Saiba mais</button>
+                    <div class="container-dois" id="produtodois">
+                        <div class="produtodois">
+                            <h3>Prancha Lizze Extreme</h3>
+                            <hr />
+                            <div class="boxdois">
+                                <b>
+                                    <li>Produto de qualidade</li>
+                                    <li>Extremamente leve</li>
+                                    <li>Portátil</li>
+                                    <li>Simples de usar</li>
+                                </b>
+                            </div>
+                            <h3>Vídeo demonstrativo</h3>
+                            <div class="videodois"><iframe width="560" height="315" src="https://www.youtube.com/embed/AZRxKV2lUXc?si=_NdJv1qpC80YzLEf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                            <hr />
+                            <div class="botoesdois">
+                                <a href="https://wa.me/553491920322?text=Gostaria%20de%20saber%20o%20preço%20da%20prancha%20Lizze%20Extreme" target="_blank"><button class="botaoprecodois">Consultar Preço</button></a>
+                                <button class="closeDois" onclick="closeDois('produtodois')">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="product led">
+                        <img src="imagens/prancha3.png" alt="prancha lizze supreme">
+                        <div class="led">Visor de led</div>
+                    </div>
+                    <h3>Prancha Lizze Extreme Slim</h3>
+                    <span><small>Lâminas menores, formato arredondado</small></span>
+                    <button class="openTres" onclick="openTres('produtotres')">Saiba mais</button>
+                    <div class="container-tres" id="produtotres">
+                        <div class="produtotres">
+                            <h3>Prancha Lizze Extreme Slim</h3>
+                            <hr />
+                            <div class="boxtres">
+                                <b>
+                                    <li>info produto</li>
+                                    <li>info produto</li>
+                                    <li>info produto</li>
+                                    <li>info produto</li>
+                                </b>
+                            </div>
+                        </div>
+                        <h3>Vídeo demonstrativo</h3>
+                        <div class="videotres">vídeo aqui</div>
+                        <hr />
+                        <div class="botoestres">
+                            <a href="https://wa.me/553491920322?text=Gostaria%20de%20saber%20o%20preço%20da%20prancha%20Lizze%20Extreme" target="_blank"><button class="botaoprecotres">Consultar Preço</button></a>
+                            <button class="closeTres" onclick="closeTres('produtotres')">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="product led">
+                        <img src="imagens/prancha4.png" alt="prancha lizze supreme">
+                        <div class="led">Visor de led</div>
+                    </div>
+                    <h3>Prancha Lizze Premium</h3>
+                    <span><small>Necesssita somente de 8 passadas por mecha</small></span>
+                   <button class="openQuatro" onclick="openQuatro('produtoquatro')">Saiba mais</button>
+                   <div class="container-quatro" id="produtoquatro">
+                    <div class="produtoquatro">
+                        <h3>Prancha Lizze Premium</h3>
+                        <hr />
+                        <div class="boxquatro">
+                            <b>
+                                <li>info produto</li>
+                                <li>info produto</li>
+                                <li>info produto</li>
+                                <li>info produto</li>
+                            </b>
+                        </div>
+                    </div>
+                    <h3>Vídeo demonstrativo</h3>
+                    <div class="videoquatro">vídeo aqui</div>
+                    <div class="botoesquatro">
+                        <a href="https://wa.me/553491920322?text=Gostaria%20de%20saber%20o%20preço%20da%20prancha%20Lizze%20Extreme" target="_blank"><button class="botaoprecoquatro">Consultar Preço</button></a>
+                        <button class="closeQuatro" onclick="closeQuatro('produtoquatro')">Voltar</button>
+                    </div>
+                   </div>
+                </div>
+                
+                <div class="item">
+                    <div class="product">
+                        <img src="imagens/prancha5.png" alt="prancha lizze supreme">
+                    </div>
+                    <h3>Prancha Lizze Mini</h3>
+                    <span><small>Mede apenas 15cm, Bivolt</small></span>
+                    <button class="openCinco" onclick="openCinco('produtocinco')">Saiba mais</button>
+                    <div class="container-cinco" id="produtocinco">
+                        <div class="produtocinco">
+                            <h2>Prancha Lizze Mini</h2>
+                            <hr />
+                            <div class="boxcinco">
+                                <b>
+                                    <li>infoproduto</li>
+                                    <li>infoproduto</li>
+                                    <li>infoproduto</li>
+                                    <li>infoproduto</li>
+                                </b>
+                            </div>
+                        </div>
+                        <h3>Vídeo demonstrativo</h3>
+                        <div class="videocinco">vídeo aqui</div>
+                        <hr />
+                        <div class="botoescinco">
+                           <a href="https://wa.me/553491920322?text=Gostaria%20de%20saber%20o%20preço%20da%20prancha%20Lizze%20Extreme" target="_blank"><button class="botaoprecocinco">Consultar Preço</button></a>
+                           <button class="closeCinco" onclick="closeCinco('produtocinco')">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="product">
+                        <img src="imagens/secador1.png" alt="secador lizze supreme">
+                    </div>
+                    <h3>Secador Lizze Supreme</h3>
+                    <span><small>Acompanha 2 bicos, jato de ar frio</small></span>
+                    <button class="openSeis" onclick="openSeis('produtoseis')">Saiba mais</button>
+                    <div class="container-seis" id="produtoseis">
+                        <div class="produtoseis">
+                            <h2>Prancha Lizze</h2>
+                            <hr />
+                            <div class="boxseis">
+                                <b>
+                                    <li>produtoinfo</li>
+                                    <li>produtoinfo</li>
+                                    <li>produtoinfo</li>
+                                    <li>produtoinfo</li>
+                                </b>
+                            </div>
+                        </div>
+                        <h3>Vídeo demonstrativo</h3>
+                        <div class="videoseis">vídeo aqui</div>
+                        <hr />
+                        <div class="botoesseis">
+                           <a href="https://wa.me/553491920322?text=Gostaria%20de%20saber%20o%20preço%20da%20prancha%20Lizze%20Extreme" target="_blank"><button class="botaoprecoseis">Consultar Preço</button></a>
+                           <button class="closeSeis" onclick="closeSeis('produtoseis')">Voltar</button>
+                        </div>
+                    </div>
+            </div>
+
+            <script src="script.js"></script>
+    </main>
+
+    <footer class="rodapeavanco">
+        <section>
+            <div>
+                <div>
+                    <a href="partedois.html" rel="next"><button>Próxima página</button></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
