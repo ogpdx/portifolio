@@ -6,11 +6,9 @@
 }
 
 
-
 .white-box {
     background-color: rgb(32, 32, 32);
-    padding: 40px;
-
+    padding: 10px;
     box-shadow: 12px, 12px, 44px, 44px #000;
 }
 
@@ -49,7 +47,7 @@
 .items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 10px;
 }
 
 .item {
@@ -209,7 +207,7 @@
     border-bottom: #777;
 }
 
-.rodapedois button {
+.ir {
     width: 100%;
     text-align: right;
     background-color: #262524;
@@ -220,7 +218,7 @@
     cursor: pointer;
 }
 
-.voltarpagina button {
+.voltar {
     width: 100%;
     text-align: left;
     background-color: #262524;
@@ -239,6 +237,7 @@
 }
 
 .rodapetres button {
+    
     width: 100%;
     text-align: left;
     background-color: #262524;
@@ -249,6 +248,7 @@
     cursor: pointer;
 }
 
+                /*Sessão dos botões de abrir modal*/
 .btnOpenProduto {
     width: 100%;
     text-align: center;
@@ -260,21 +260,168 @@
     cursor: pointer;
 }
 
+.openDois {
+    width: 100%;
+    text-align: center;
+    background-color: #262524; 
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.openTres {
+    width: 100%;
+    text-align: center;
+    background-color: #262524;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.openQuatro {
+    width: 100%;
+    text-align: center;
+    background-color: #262524;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.openCinco {
+    width: 100%;
+    text-align: center;
+    background-color: #262524;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.openSeis {
+    width: 100%;
+    text-align: center;
+    background-color: #262524;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    /*linha que separa*/
 hr {
     border: 0px;
     border-top: 1px solid lightgray;
 }
 
+                /*Container dos produtos saiba mais*/
 .container-produto {
-    width: 100vw;
+    width: 80vw;
+    display: none;    
     position: fixed;
-    display: none;
     top: 30px;
     z-index: 999;
     justify-content: center;
 }
 
+.container-dois {
+    width: 80vw;
+    display: none;
+    position: fixed;
+    top: 30px;
+    z-index: 999;
+    justify-content: left;
+}
+
+.container-tres {
+    width: 80vw;
+    display: none;
+    position: fixed;
+    top: 30px;
+    z-index: 999;
+    justify-content: left;
+}
+
+.container-quatro {
+    width: 100vw;
+    display: none;
+    position: fixed;
+    top: 30px;
+    z-index: 999;
+    justify-content: center;
+}
+
+.container-cinco {
+    width: 100vw;
+    display: none;
+    position: fixed;
+    top: 30px;
+    z-index: 999;
+    justify-content: left;
+}
+
+.container-seis {
+    width: 80vw;
+    display: none;
+    position: fixed;
+    top: 30px;
+    z-index: 999;
+    justify-content: left;
+}
+
+                /*produtos em si, modal*/
 .produto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.produtodois {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.produtotres {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.produtoquatro {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.produtocinco {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.produtoseis {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -287,10 +434,12 @@ hr {
     display: flex;
 }
 
-.active .produto {
+.active .produto, .produtodois, .produtotres, .produtoquatro, .produtocinco, .produtoseis {
     animation: produto .4s;
 }
 
+
+                /*keyframes, para cada produto*/
 @keyframes produto {
     from {
         opacity: 0;
@@ -302,13 +451,101 @@ hr {
     }
 }
 
+@keyframes produtodois {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes produtotres {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes produtoquatro {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes produtocinco {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes produtoseis {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+            /*área referente a caixa de cada modal*/
 .caixa {
     margin: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50%;
 }
 
+
+.boxdois {
+    margin: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50%;
+}
+
+.boxtres {
+    margin: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50%;
+}
+
+.boxquatro {
+    margin: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50%;
+}
+
+.boxcinco {
+    margin: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50%;
+}
+
+.boxseis {
+    margin: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50%;
+}
+
+            /*botões referentes à compra*/
 .botoes button {
+    flex-direction: row;
     font-size: medium;
     padding: 10px;
     border: none;
@@ -317,18 +554,133 @@ hr {
     cursor: pointer;
 }
 
+.botoesdois button {
+    flex-direction: row;
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.botoestres button {
+    flex-direction: row;
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.botoesquatro button {
+    flex-direction: row;
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.botoescinco button {
+    flex-direction: row;
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.botoesseis button {
+    flex-direction: row;
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+            /*botão preço*/
 .botaopreco {
     background-color: rgb(2, 40, 75)!important;
 }
 
+.botaoprecodois {
+    background-color: rgb(2, 40, 75)!important;
+}
+
+.botaoprecotres {
+    background-color: rgb(2, 40, 75)!important;
+}
+
+.botaoprecoquatro {
+    background-color: rgb(2, 40, 75)!important;
+}
+
+.botaoprecocinco {
+    background-color: rgb(2, 40, 75)!important;
+}
+
+.botaoprecoseis {
+    background-color: rgb(2, 40, 75)!important;
+}
+
+            /*botão voltar*/
 .botaoclose {
     background-color: brown!important;
 }
 
+.closeDois {
+    background-color: brown!important;
+}
+
+.closeTres {
+    background-color: brown!important;
+}
+
+.closeQuatro {
+    background-color: brown!important;
+}
+
+.closeCinco {
+    background-color: brown!important;
+}
+
+.closeSeis {
+    background-color: brown!important;
+}
+
+        /*font das caixas*/
 .caixa, .botoes button {
     font-size: smaller;
 }
 
+.boxdois, .botoesdois button {
+    font-size: smaller;
+}
+
+.boxtres, .botoestres button {
+    font-size: smaller;
+}
+
+.boxquatro, .botoesquatro button {
+    font-size: smaller;
+}
+
+.boxcinco, .botoescinco button {
+    font-size: smaller;
+}
+
+.boxseis, .botoesseis button {
+    font-size: smaller;
+}
+        /*vídeo demonstrativo de cada modal*/
 .demonstrativo {
     display: flex;
     border: none;
@@ -338,6 +690,44 @@ hr {
 
 }
 
+.videodois {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    align-content: center;
+}
+
+.videotres {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    align-content: center;
+}
+
+.videoquatro {
+    display: flex;
+    border: none;
+    align-items: center;
+    align-content: center;
+}
+
+.videocinco {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    align-content: center;
+}
+
+.videoseis {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    align-content: center;
+}
 
 @media (max-width:680px) {
     .items {
@@ -363,9 +753,50 @@ hr {
         height: auto;
     }
 
+    .container-dois {
+        height: auto;
+    }
+
+    .container-tres {
+        height: auto;
+    }
+
+    .container-quatro {
+        height: auto;
+    }
+
+    .container-cinco {
+        height: auto;
+    }
+
+    .container-seis {
+        height: auto;
+    }
+
     .produto {
         display: block;
     }
+
+    .produtodois {
+        display: block;
+    }
+
+    .produtotres {
+        display: block;
+    }
+
+    .produtoquatro {
+        display: block;
+    }
+
+    .produtocinco {
+        display: block;
+    }
+
+    .produtoseis {
+        display: block;
+    }
+
 
     .demonstrativo {
         height: auto;
@@ -375,4 +806,51 @@ hr {
         max-width: auto;
         min-width: 160px;
     }
+
+
+    .videodois {
+        height: auto;
+    }
+
+    .videodois {
+        max-width: auto;
+        min-width: 160px;
+    }
+
+    .videotres {
+        height: auto;
+    }
+
+    .videotres {
+        max-width: auto;
+        min-width: 160px;
+    }
+
+    .videoquatro {
+        height: auto;
+    }
+
+    .videoquatro {
+        max-width: auto;
+        min-width: 160px;
+    }
+
+    .videocinco {
+        height: auto;
+    }
+
+    .videocinco {
+        max-width: auto;
+        min-width: 160px;
+    }
+
+    .videoseis {
+        height: auto;
+    }
+
+    .videoseis {
+        max-width: auto;
+        min-width: 160px;
+    }
+
 }
