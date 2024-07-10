@@ -8,7 +8,7 @@
 
 .white-box {
     background-color: rgb(32, 32, 32);
-    
+    padding: 10px;
     box-shadow: 12px, 12px, 44px, 44px #000;
 }
 
@@ -340,7 +340,7 @@ hr {
 }
 
 .container-tres {
-    width: 80vw;
+    width: 60vw;
     display: none;
     position: fixed;
     top: 30px;
@@ -367,7 +367,7 @@ hr {
 }
 
 .container-seis {
-    width: 80vw;
+    width: 60vw;
     display: none;
     position: fixed;
     top: 30px;
