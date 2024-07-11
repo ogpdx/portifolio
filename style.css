@@ -5,6 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.corpo3 {
+    background-color: #262524;
+    justify-content: center;
+    align-items: center;
+}
 
 .white-box {
     background-color: rgb(32, 32, 32);
@@ -66,7 +71,7 @@
     border-radius: 5px;
 }
 
-.product.sale .bivolt {
+.product.bivolt .bivolt {
     position: absolute;
     top: 0px;
     left: 0px;
