@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welina Cosméticos | Página três</title>
 </head>
-<body>
+<body class="corpo3">
     <header class="cabecalho">
         <img class="logowelina" src="imagens/welinaredondo.png" alt="logo welina cosmeticos">
         <nav class="menucabecalho">
@@ -16,52 +16,113 @@
         </nav>
     </header>
 
-    <main>
+    <main class="corpo3">
         <div class="container">
-            <div class="white-box">
+            <div class="corpo3">
                 <div class="items">
                     <div class="item">
-                        <div class="product sale">
+                        <div class="product bivolt">
                             <img src="imagens/modelador.png" alt="prancha lizze supreme">
                             <div class="bivolt">Bivolt</div>
                         </div>
                         <h3>Modelador Lizze Extreme</h3>
                         <span><small>25MM de diâmetro, cachos definidos e brilhantes</small></span>
-                        <a href="https://wa.me/553484256087?text=Gostaria%20de%20saber%20mais%20sobre%20o%20Photon%20Lizze" target="_blank"><button>Saiba Mais</button></a>
+                        <button class="btnOpenProduto" onclick="openProduto('produto1')">Saiba Mais</button>
+                    <div class="container-produto" id="produto1" >
+                        <div class="produto">
+                            <h3>Modelador Lizze Extreme</h3>
+                            <hr />
+                            <div class="caixa">
+                                <b><li>Cachos definidos e brilhantes</li>
+                                <li>Portátil (25mm) de diâmetro</li>
+                                <li>Empunhadeira de borracha</li>
+                                <li>450°F de temperatura</li></b>
+                            </div>
+                            <h3>Vídeo demonstrativo:</h3>
+                            <div class="demonstrativo">
+                                <iframe class="demonstrativo"  width="560" height="315" src="https://www.youtube.com/embed/RhNQL9Wf00Y?si=hNZunCS9BX-beWLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <hr />
+                            <div class="botoes">
+                                <a href="https://wa.me/553491920322?text=Gostaria%20de%20saber%20o%20preço%20da%20" target="_blank"><button class="botaopreco">Consultar Preço</button></a>
+                                <button class="botaoclose" onclick="closeProduto('produto1')">Voltar</button>
+                            </div>
+                        </div>
                     </div>
+                 </div>
 
                         <div class="item">
-                        <div class="product sale">
+                        <div class="product bivolt">
                         <img src="imagens/modeladorcurly.png" alt="prancha lizze supreme">
                         <div class="bivolt">Bivolt</div>
                         </div>
                         <h3>Modelador Lizze Curly</h3>
                         <span><small>Prático e ágil, leve(320g)</small></span>
-                        <a href="https://wa.me/553484256087?text=Gostaria%20de%20saber%20mais%20sobre%20o%20Photon%20Lizze" target="_blank"><button>Saiba Mais</button></a>
+                        <button class="openDois" onclick="openDois('produtodois')">Saiba mais</button>
+                    <div class="container-dois" id="produtodois">
+                        <div class="produtodois">
+                            <h3>Modelador Lizze Curly</h3>
+                            <hr />
+                            <div class="boxdois">
+                                <b>
+                                    <li>410°F</li>
+                                    <li>Cachos perfeitos formados em apenas 8 segundos</li>
+                                    <li>Leve e portátil</li>
+                                    <li>Aviso sonoro após o cacho ser feito</li>
+                                </b>
+                            </div>
+                            <h3>Vídeo demonstrativo</h3>
+                            <div class="videodois"><iframe class="videodois" width="560" height="315" src="https://www.youtube.com/embed/Bxkb0FYdky8?si=5pDu6_1U1n3jtWoH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                            <hr />
+                            <div class="botoesdois">
+                                <a href="https://wa.me/553491920322?text=Gostaria%20de%20saber%20o%20preço%20da%20prancha%20Lizze%20Extreme" target="_blank"><button class="botaoprecodois">Consultar Preço</button></a>
+                                <button class="closeDois" onclick="closeDois('produtodois')">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
                      </div>
 
             <div class="item">
-            <div class="product">
+            <div class="product bivolt">
             <img src="imagens/maquinasupreme.png" alt="prancha lizze supreme">
+            <div class="bivolt">Bivolt</div>
             </div>
             <h3>Máquina Lizze Supreme</h3>
             <span><small>Sem fio, lâmina de aço de carbono</small></span>
-            <a href="https://wa.me/553484256087?text=Gostaria%20de%20saber%20mais%20sobre%20o%20Photon%20Lizze" target="_blank"><button>Saiba Mais</button></a>
-            </div>
-                    </div>
-                </div>
-            </div>
+            <button class="openTres" onclick="openTres('produtotres')">Saiba mais</button>
+                            <div class="container-tres" id="produtotres">
+                                <div class="produtotres">
+                                    <h3>Maquina Lizze Supreme</h3>
+                                    <hr />
+                                    <div class="boxtres">
+                                        <b>
+                                            <li>Lâmina com acabamento em aço de carbono</li>
+                                            <li>Bateria extremamente econômica</li>
+                                            <li>Silencioso e com 9000RPM</li>
+                                            <li>Acompanha oito pentes</li>
+                                        </b>
+                                    </div>
+                                    <h3>Vídeo demonstrativo</h3>
+                                    <div class="videotres"><iframe class="videotres" width="560" height="315" src="https://www.youtube.com/embed/2szi7lfFJ-o?si=VQGPBmFSxINoGMPf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                                    <hr />
+                                    <div class="botoestres">
+                                        <a href="https://wa.me/553491920322?text=Gostaria%20de%20saber%20o%20preço%20da%20prancha%20Lizze%20Extreme" target="_blank"><button class="botaoprecotres">Consultar Preço</button></a>
+                                        <button class="closeTres" onclick="closeTres('produtotres')">Voltar</button>
+                                    </div>
+                                </div>
+                            </div>
         </div>
+
+        <script src="script.js"></script>
     </main>
 
     <footer class="rodapetres">
-        <nav>
-            <div>
-                <div>
-                    <a href="pranchas.html" rel="prev"><button>Página inicial</button></a>
-                </div>
-            </div>
-        </nav>
+        <button class="voltar" onclick="voltarPagina()">Página inicial</button>
+        <script>
+            function voltarPagina() {
+            window.location.href = "index.html"
+        }
+        </script>
     </footer>
 </body>
 </html>
